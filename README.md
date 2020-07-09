@@ -1,4 +1,4 @@
-# Setup
+# Usage
 
 1. create venv
 
@@ -13,8 +13,14 @@ $ source env/bin/activate
 (env) $ pip install -r requirements.txt
 ```
 
-3. Run main.py
+3. Run `main.py` or `main_rx_ver.py`
 
 ```sh
 (env) $ python3 ./src/main.py
+```
+
+or
+
+```sh
+(env) $ python3 ./src/main_rx_ver.py
 ```

@@ -24,13 +24,11 @@ def main():
     # setup gui
     image = Image.open(IMAGE_FILE)
     image_width, image_height = image.size
-    print("image size: ", image.size)
-
     window_size = RectSize(width = image_width, height = image_height)
     root = initialize_window(window_size)
-    canvas = create_canvas_on(root, window_size, Point(0, 0))
+    canvas = create_canvas_on(root, window_size, canvas_place=Point(0, 0))
     image_tk = ImageTk.PhotoImage(image)
-    canvas.create_image(0, 0, image = image_tk, anchor="nw")
+    canvas.create_image(0, 0, image=image_tk, anchor="nw")
 
     def draw_rect(rectangle):
         canvas.delete("rect")
