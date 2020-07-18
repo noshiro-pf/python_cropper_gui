@@ -24,7 +24,7 @@ $ source env/bin/activate
 or
 
 ```sh
-(env) $ python3 ./src/cropper_rx_ver.py
+(env) $ python3 ./src/cropper_rx.py
 ```
 
 ## lint
